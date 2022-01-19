@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/telescope/static/css/main.56df6445.css",
+    "main.js": "/telescope/static/js/main.845fc40e.js",
+    "static/media/noise.jpg": "/telescope/static/media/noise.5c7255075ea0c24af068.jpg",
+    "static/media/Krungthep.ttf": "/telescope/static/media/Krungthep.9545f0ceefb78a42f2a0.ttf",
+    "static/media/expand.svg": "/telescope/static/media/expand.e235c0835562012d360ef1be681ffde2.svg",
+    "index.html": "/telescope/index.html",
+    "static/media/likeheart.svg": "/telescope/static/media/likeheart.a1353359d05c75a8bb78c534ed6daa37.svg",
+    "static/media/likeheartmask.svg": "/telescope/static/media/likeheartmask.a4c00986aec324a970be.svg",
+    "static/media/larrow.svg": "/telescope/static/media/larrow.6cbcdb4fa2d2b15973fa4c26c4c0fe84.svg",
+    "static/media/rarrow.svg": "/telescope/static/media/rarrow.2b82bec053aff5ac75500238e65e00f5.svg",
+    "main.56df6445.css.map": "/telescope/static/css/main.56df6445.css.map",
+    "main.845fc40e.js.map": "/telescope/static/js/main.845fc40e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56df6445.css",
+    "static/js/main.845fc40e.js"
+  ]
+}

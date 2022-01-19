@@ -1,0 +1,503 @@
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* FONTS */
+
+@font-face {
+  font-family: 'Krungthep';
+  src: local('Krungthep'), url("./Krungthep.ttf") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* MAIN */
+
+body {
+  overflow: hidden;
+  color: white;
+  font-family: Krungthep;
+  background-color: #010814
+}
+
+.App {
+  text-align: center;
+  width:100vw;
+  height:100vh;
+}
+
+.App::after {
+  content:" ";
+  background-image: url("./noise.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -20;
+  opacity: .03;
+}
+
+.bg {
+  background-color: #010814;
+  z-index: -999;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+.outercircle {
+  width: 90vw;
+  height: 90vw;
+  z-index: -10;
+  background-color: #000223;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle{
+  width: 30vw;
+  height: 30vw;
+  background-color: #3d226e;
+  border-radius: 50%;
+  position: relative;
+
+}
+
+.circle::after{
+  content: '';
+  background-color: #2b185f;
+  width: 50vw;
+  height: 50vw;
+  position:absolute;
+  z-index: -1;
+  border-radius:50%;
+  top: -10vw;
+  left:-10vw;
+
+}
+
+.circle::before{
+  content: '';
+  background-color: #140944;
+  width: 70vw;
+  height: 70vw;
+  position:absolute;
+  z-index: -1;
+  border-radius:50%;
+  top:-20vw;
+  left:-20vw;
+
+}
+
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* SMALL BACKGROUND STARS */
+
+
+/* .smallstar {
+  background-repeat: no-repeat;
+  z-index: -999;
+  position: absolute;
+  opacity: 20%;
+}
+
+.smallstar1 {
+  background-image: url("./smallstar5.svg");
+  width: 20px;
+  height: 20px;
+  bottom: 50px;
+  left: 100px;
+}
+
+.smallstar2 {
+  background-image: url("./smallstar1.svg");
+  width: 20px;
+  height: 20px;
+  bottom: 200px;
+  left: 220px;
+}
+
+.smallstar3 {
+  background-image: url("./smallstar3.svg");
+  width: 10px;
+  height: 10px;
+  bottom: 300px;
+  left: 50px;
+}
+
+.smallstar4 {
+  background-image: url("./smallstar2.svg");
+  width: 20px;
+  height: 20px;
+  bottom: 400px;
+  left: 120px;
+}
+
+.smallstar5 {
+  background-image: url("./smallstar2.svg");
+  width: 20px;
+  height: 20px;
+  top: 350px;
+  left: 175px;
+}
+
+.smallstar6 {
+  background-image: url("./smallstar2.svg");
+  width: 20px;
+  height: 20px;
+  top: 350px;
+  left: 175px;
+} */
+
+
+
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* NAV */
+
+.nav {
+  width: 100vw;
+  height: 8vh;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlink, .title, .logo {
+  margin: 0px 20px;
+}
+
+.clearlikes {
+  margin-left: 65vw;
+}
+
+
+.navlinktext {
+  display: inline-block;
+  position: relative;
+}
+
+.navlinktext::after {
+content: '';
+width:130%;
+height: 40px;
+/* margin-top:4px; */
+top:-50%;
+left:-15%;
+background: #ffffff23;
+border: 1px solid white;
+display:block;
+transform: scaleX(0);
+transition: transform 0.01s ease;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+position: absolute;
+}
+
+.navlinktext:hover::after,
+.navlinktext:focus::after {
+transform: scaleX(1);
+}
+
+.logo {
+  margin-right: -10px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* CONTENT */
+
+ .content {
+   width: 100vw;
+   height: 92vh;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+ }
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* MAIN PICTURE */
+
+
+.mainpicture {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  height: 70%;
+}
+
+.pic {
+  border: 1px solid white;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.allpicinfo{
+  background-color: #ffffff23;
+  border: 1px solid white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display:grid;
+  font-size: 10px;
+  grid-template-rows: .4fr .33fr .33fr 2fr;
+  text-align: left;
+}
+
+.picinfo {
+  padding: 20px;
+}
+
+span .pictitle::after, span .picdate::after,  span .picexplanation::after {
+  display:block;
+}
+ 
+
+.pictitle, .picdate {
+  border-bottom: 1px solid white;
+}
+
+.pictitle {
+  font-size: 35px;
+}
+
+.picdate {
+  font-size: 20px;
+}
+
+.picexplanation {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Inconsolata'
+}
+
+.loadingbg, .pic {
+  background-color:#010814 ;
+}
+
+.errmsg {
+  display: block;
+  padding-top: 45%
+}
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* BUTTONS */
+
+
+.likebutton {
+  width: 60px;
+  height: 60px; 
+  border-radius: 50px;
+  border: 1px solid white;
+  margin: 20px;
+  position: relative;
+  transition: transform 0.1s ease;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.likeheartborder {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 600;
+}
+
+.likeheart {
+  position: absolute;
+  z-index: 599;
+  -webkit-mask: url("./likeheartmask.svg") no-repeat center;
+  mask: url("./likeheartmask.svg") no-repeat center;
+  width: 20px; 
+  height: 20px;
+}
+
+.liked {
+  background-color: #d40b6e;
+  /* transition: transform  */
+}
+
+.unliked {
+  background-color: transparent;
+  transition: background-color 0s .15s;
+}
+
+
+ .likeheartripple1, .likeheartripple2, .likeheartripple3   { 
+  background-color: #d40b6e;
+  opacity: 100%;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 100;
+  transform: scale(0);
+ } 
+
+.likeheartripple1 {
+  transition: transform .2s ease .009s;
+  width:30px;
+  height: 30px;
+  top: 15px;
+  left: 15px;
+}
+.likeheartripple2 {
+  transition: transform .25s ease .009s;
+  width:40px;
+  height: 40px;
+  opacity: 30%;
+  top: 10px;
+  left: 10px;
+}
+.likeheartripple3 {
+  transition: transform .275s ease .009s;
+  width:50px;
+  opacity: 30%;
+  height: 50px;
+  top: 5px;
+  left: 5px;
+}
+
+
+.likeani {
+  transform: scale(1);
+ }
+
+
+.arrowbutton, .disabledarrowbutton, .expand{
+  width: 60px;
+  height: 60px;
+  margin: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  border-radius: 50px;
+  border: 1px solid white;
+  position: relative;
+  transition: transform 0.1s ease;
+}
+
+.likebutton:hover, .arrowbutton:hover, .expand:hover {
+  transform: translateY(1px);
+}
+
+.likebutton:active, .arrowbutton:active, .expand:active {
+  transform: translateY(4px)
+}
+
+.arrowbutton:hover, 
+.arrowbutton:focus, 
+.likebutton:hover, 
+.likebutton:focus,
+.expand:hover,
+.expand:focus {
+  background-color: #ffffff23;
+}
+
+
+.arrowbutton::after, .likebutton::after, .disabledarrowbutton::after, .expand::after {
+  content: '';
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50px;
+  top: 7%;
+  left: 6%;
+  z-index: -1;
+}
+
+.likebutton::after {
+  z-index: 1;
+}
+
+.expand {
+  position: absolute;
+  top: 60px;
+  right: -20px;
+  background-size: 60%;
+}
+
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* LIKES PAGE */
+
+.likespage {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.emptylikespage {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.likedpic {
+  border: 1px solid white;
+  width: 315px;
+  height: 315px;
+}
+
+
+/* 🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀 ☆.。.:*・°☆.。.:*・°☆.。🔭 ☆.。.:*・°☆.。.:*・°☆.。🌟 ☆.。.:*・°☆.。.:*・°☆.。👽 ☆.。.:*・°☆.。.:*・°☆.。🚀  */
+/* ABOUT PAGE */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutmsg {
+  width: 30%;
+  height: 70%;
+  background-color: #ffffff23;
+  border: 1px solid white;
+  text-align: left;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.abouttitle {
+  padding:20px;
+  border-bottom: 1px solid white;
+}
+
+
+.aboutbody {
+  padding:20px;
+  font-family: 'Inconsolata'
+
+}
+
+p > a {
+  text-decoration: none;
+  color: #fff171;
+}
+
+p > a:hover, p > a:focus {
+  color:#d40b6e;
+}
