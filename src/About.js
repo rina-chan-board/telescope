@@ -5,7 +5,7 @@ const About = () => {
 
             <p className="aboutbody">
             welcome to telescope! Look back through years of daily astronomy photos from NASA's photo of the day API. 
-            Save the ones you like best for later. <br> <br>
+            Save the ones you like best for later. <br/> <br/>
             
             future features:
             <ul>

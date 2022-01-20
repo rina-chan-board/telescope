@@ -17,8 +17,6 @@ import {
 } from "react-router-dom";
 import { useLocalStorage } from './useLocalStorage';
 
-// API KEY:
-// lGR7Az4kXbuEOgUTHQqro4aGl3Km3eJ15bS6I7f2
 
 function App() {
 
@@ -26,8 +24,8 @@ function App() {
   const [likes, setLikes] = useLocalStorage("likes", [])
 
   const handleClear = (key, defaultValue) => {
-        setLikes([])
-        localStorage.setItem(key, JSON.stringify(defaultValue))
+    setLikes([])
+    localStorage.setItem(key, JSON.stringify(defaultValue))
 }
 
   useEffect(() => {
@@ -47,20 +45,23 @@ function App() {
     getPic(startdate, 0)
 }, []);
 
+const fixDate = () => {
+  startdate.setTime(startdate.getTime() - (startdate.getTimezoneOffset() * 60000));
+  return startdate.toISOString()
+}
 
 const getPic = (startdate, datechange) => {
 
   startdate.setDate(startdate.getDate() + datechange)
-  let url = baseurl + startdate.toISOString().slice(0,10)
+  let url = baseurl + fixDate(startdate).slice(0,10)
 
-  
   const fetchData = async () => {
     try {
       const response = await fetch(url);
       const json = await response.json();
       setData(json)
     } catch (error) {
-      console.log("THE ERROR IS:", error);
+      console.log("err:", error);
     }
   };
 
