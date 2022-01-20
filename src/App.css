@@ -473,7 +473,7 @@ span .pictitle::after, span .picdate::after,  span .picexplanation::after {
 
 .aboutmsg {
   width: 30%;
-  height: 70%;
+  height: 40%;
   background-color: #ffffff23;
   border: 1px solid white;
   text-align: left;
